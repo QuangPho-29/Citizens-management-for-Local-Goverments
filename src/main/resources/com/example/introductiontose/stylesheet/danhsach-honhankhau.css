@@ -1,0 +1,93 @@
+.btn-menu {
+    -fx-background-color: transparent;
+    -fx-border-color: inherit;
+    -fx-border-width: 0 0 3 0;
+    -fx-text-fill: #000000;
+    -fx-alignment: center;
+}
+
+.btn-menu:hover {
+    -fx-border-color: #596ed7;
+}
+
+.btn-menu:pressed {
+    -fx-background-color: #596ed7;
+    -fx-text-fill: #fff;
+}
+
+.pane-list {
+    -fx-background-color: transparent;
+    -fx-background-radius: 20px;
+}
+
+.pane-detail {
+    -fx-background-color: #fff;
+    -fx-background-radius: 20px;
+}
+
+.transparent-scroll {
+    -fx-background-color: transparent;
+    -fx-background-radius: 20px;
+}
+
+.content-list-vbox {
+    -fx-background-color: #fff;
+    -fx-background-radius: 20px;
+}
+
+.transparent-hbox {
+    -fx-background-color: transparent;
+    -fx-background-radius: 20px;
+}
+
+/* Styles for the "Ho Khau" button */
+.btn-ho-khau {
+    -fx-background-color: transparent;
+    -fx-background-radius: 50%; /* Circular shape */
+    -fx-border-color: #acacac;
+    -fx-border-radius: 50%;
+    -fx-alignment: center;
+}
+
+.btn-ho-khau:hover {
+    -fx-background-color: #596ed7;
+}
+
+
+.btn-ho-khau:pressed {
+    -fx-background-color: #6c7dd9;
+}
+
+/* Styles for the "Chu Ho" button */
+.btn-chu-ho {
+    -fx-background-color: transparent;
+    -fx-background-radius: 50%; /* Circular shape */
+    -fx-border-color: #acacac;
+    -fx-border-radius: 50%;
+    -fx-alignment: center;
+}
+
+.btn-chu-ho:hover {
+    -fx-background-color: #596ed7;
+}
+
+.btn-chu-ho:pressed {
+    -fx-background-color: #6c7dd9;
+}
+
+/* Styles for the "Nhan Khau" button */
+.btn-nhan-khau {
+    -fx-background-color: transparent;
+    -fx-background-radius: 50%; /* Circular shape */
+    -fx-border-color: #acacac;
+    -fx-border-radius: 50%;
+    -fx-alignment: center;
+}
+
+.btn-nhan-khau:hover {
+    -fx-background-color: #acacac;
+}
+
+.btn-nhan-khau:pressed {
+    -fx-background-color: #b6b6b6;
+}

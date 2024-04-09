@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.introductiontose.controller.thongke.ThongKeNKAdminController">
+   <children>
+      <HBox alignment="TOP_CENTER" prefHeight="690.0" prefWidth="800.0">
+         <children>
+            <VBox prefHeight="690.0" prefWidth="800.0">
+               <children>
+                  <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="487.5">
+                     <children>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" prefHeight="100.0" prefWidth="450.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+                           <children>
+                              <Label fx:id="tenTDP" prefHeight="100.0" text="Tổ dân phố [Tên tổ dân phố]">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="41.0" layoutY="10.0" prefHeight="100.0" text="Quản lý nhân khẩu, hộ khẩu">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="27.5" right="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="487.5">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="215.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../iconPack/home.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <VBox alignment="CENTER" maxHeight="-Infinity" prefHeight="75.0" prefWidth="150.0">
+                                 <children>
+                                    <Label prefHeight="100.0" text="Hộ khẩu">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Label>
+                                    <Label fx:id="soHoKhau" layoutX="59.0" layoutY="10.0" prefHeight="100.0" text="số hộ khẩu" textFill="#396386">
+                                       <font>
+                                          <Font name="System Bold" size="19.0" />
+                                       </font></Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="27.5" right="10.0" />
+                           </HBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="215.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../iconPack/user.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <VBox alignment="CENTER" maxHeight="-Infinity" prefHeight="75.0" prefWidth="150.0">
+                                 <children>
+                                    <Label prefHeight="100.0" text="Nhân khẩu">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Label>
+                                    <Label fx:id="soNhanKhau" layoutX="59.0" layoutY="10.0" prefHeight="100.0" text="Số nhân khẩu" textFill="#396386">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font></Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.5" prefWidth="450.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+                     <children>
+                        <HBox alignment="CENTER" minHeight="-Infinity" prefHeight="25.0" prefWidth="450.0">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="15.0" right="25.0" top="15.0" />
+                           </VBox.margin>
+                           <children>
+                              <MenuButton fx:id="tkSoLuong" alignment="CENTER" minWidth="-Infinity" mnemonicParsing="false" prefHeight="18.0" prefWidth="120.0" text="Số lượng" textAlignment="CENTER" wrapText="true">
+                                 <items>
+                                    <MenuItem fx:id="nhanKhau" mnemonicParsing="false" onAction="#onNhanKhauClicked" style="-fx-pref-width: 120.0" text="Nhân Khẩu" />
+                                    <MenuItem fx:id="hoKhau" mnemonicParsing="false" onAction="#onHoKhauClicked" style="-fx-pref-width: 120.0" text="Hộ Khẩu" />
+                                 </items>
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </MenuButton>
+                              <Label fx:id="tkDoTuoi" alignment="CENTER" layoutX="10.0" layoutY="10.0" minWidth="-Infinity" onMouseClicked="#onTKDoTuoiClicked" prefWidth="120.0" text="Độ tuổi">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="tkGioiTinh" alignment="CENTER" layoutX="220.0" layoutY="14.0" minWidth="-Infinity" onMouseClicked="#onTKGioiTinhClicked" prefWidth="120.0" text="Giới tính" />
+                           </children>
+                        </HBox>
+                        <Pane fx:id="thongKeChart" prefHeight="345.0" prefWidth="450.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="27.5" left="27.5" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+            <Line endX="-100.0" endY="650.0" startX="-100.0" startY="100.0" stroke="#c7bebe" strokeLineCap="ROUND">
+               <HBox.margin>
+                  <Insets top="75.0" />
+               </HBox.margin>
+            </Line>
+            <VBox prefHeight="690.0" prefWidth="800.0">
+               <children>
+                  <VBox maxHeight="-Infinity" prefHeight="308.5" prefWidth="100.0" style="-fx-background-color: ffffff; -fx-background-radius: 10;">
+                     <children>
+                        <Label fx:id="tenDanhSach" alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="250.0" text="Danh sách hộ khẩu">
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <VBox fx:id="danhSachNKHK" />
+                        <VBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" prefWidth="250.0" fx:id="xemTatCaDS">
+                           <children>
+                              <Button fx:id="buttonXemTatCaHoKhau" mnemonicParsing="false" onAction="#hienThiThongTinCacNK" style="-fx-background-color: white;" text="Xem tất cả" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <Line endX="115.0" startX="-105.0" stroke="#c7bebe" strokeLineCap="ROUND" strokeWidth="0.5">
+                     <VBox.margin>
+                        <Insets left="27.5" top="10.0" />
+                     </VBox.margin>
+                  </Line>
+                  <VBox layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" prefHeight="308.5" prefWidth="100.0" style="-fx-background-color: ffffff; -fx-background-radius: 10;">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="250.0" text="Lịch sử thay đổi">
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane fx:id="scrollPaneLichSu" fitToWidth="true" hbarPolicy="NEVER" minViewportHeight="200.0" minViewportWidth="250.0" prefHeight="200.0" prefViewportHeight="200.0" prefViewportWidth="250.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" styleClass="parent" stylesheets="@../style.css" vbarPolicy="NEVER">
+                           <content>
+                              <VBox fx:id="lichSu" minHeight="215.0" style="-fx-background-color: #ffffff;" />
+                           </content>
+                        </ScrollPane>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" prefWidth="250.0" fx:id="xemTatCaLS">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#hienThiThongTinCacYeuCau" style="-fx-background-color: white;" text="Xem tất cả" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="27.5" left="10.0" right="27.5" top="15.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</Pane>

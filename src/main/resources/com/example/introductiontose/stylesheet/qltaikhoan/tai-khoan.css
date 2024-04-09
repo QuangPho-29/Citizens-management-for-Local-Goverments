@@ -1,0 +1,57 @@
+.hbox-title {
+    -fx-background-color: #5b9bd5;
+}
+
+.hbox-odd {
+    -fx-background-color: #BDD7EE;
+}
+
+.hbox-even {
+    -fx-background-color: #DDEBF7;
+}
+
+.button-reset-account {
+    -fx-background-color: transparent;
+    -fx-background-radius: 50px;
+    -fx-border-color: #7a7a7a;
+    -fx-border-radius: 50%;
+    -fx-text-fill: #7a7a7a;
+}
+
+.button-reset-account:hover {
+    -fx-background-color: #7a7a7a;
+    -fx-text-fill: white;
+}
+
+.button-reset-account:pressed {
+    -fx-background-color: #5b9bd5;
+}
+
+.button-delete-account {
+    -fx-background-color: transparent;
+    -fx-background-radius: 50px;
+    -fx-border-color: #ff4343;
+    -fx-border-radius: 50%;
+    -fx-text-fill: #ff4343;
+}
+
+.button-delete-account:hover {
+    -fx-background-color: #ff4343;
+    -fx-text-fill: white;
+}
+
+.button-delete-account:pressed {
+    -fx-background-color: #ff5555;
+}
+
+.search-btn {
+    -fx-background-color: transparent;
+}
+
+.search-bar {
+    -fx-background-color: transparent;
+    -fx-background-radius: 50px;
+    -fx-border-color: #797979;
+    -fx-border-radius: 50%;
+    -fx-text-fill: #000000;
+}

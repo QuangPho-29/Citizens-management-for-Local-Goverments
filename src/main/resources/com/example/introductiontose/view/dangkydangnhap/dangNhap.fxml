@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.introductiontose.controller.dangkydangnhap.dangNhapController">
+    <children>
+        <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" smooth="false">
+            <image>
+                <Image url="@image/login1.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="294.0" layoutX="62.0" layoutY="49.0" smooth="false" stroke="#c9c9c9" strokeType="OUTSIDE" strokeWidth="5.0" width="468.0" />
+        <ImageView fitHeight="294.0" fitWidth="468.0" layoutX="62.0" layoutY="46.0" pickOnBounds="true">
+            <image>
+                <Image url="@image/login2.png" />
+            </image>
+        </ImageView>
+        <Text fill="#d80015" layoutX="109.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HUST" wrappingWidth="59.8876953125">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Text>
+        <Text fill="#d80015" layoutX="200.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SOICT" wrappingWidth="78.2877197265625">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Text>
+        <Text fill="#29417d" layoutX="97.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="147114" wrappingWidth="78.2877197265625">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Text>
+        <Text fill="#29417d" layoutX="200.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group 6" wrappingWidth="78.2877197265625">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Text>
+        <Label layoutX="344.0" layoutY="122.0" text="Tên đăng nhập" textFill="#728db7">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="344.0" layoutY="181.0" text="Mật khẩu" textFill="#728db7">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="soCccdDangNhap" layoutX="345.0" layoutY="142.0" prefHeight="30.0" prefWidth="154.0" />
+        <TextField fx:id="password" layoutX="345.0" layoutY="200.0" prefHeight="30.0" prefWidth="154.0" />
+        <Button layoutX="344.0" layoutY="262.0" mnemonicParsing="false" onAction="#login" prefHeight="30.0" prefWidth="78.0" style="-fx-background-color: #4e8cde; -fx-background-radius: 6px;" text="Đăng nhập" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Button layoutX="429.0" layoutY="263.0" mnemonicParsing="false" onAction="#signUp" prefHeight="30.0" prefWidth="69.0" style="-fx-background-color: #ffffff; -fx-background-radius: 6px; -fx-border-color: #4e8cde; -fx-border-radius: 6px;" text="Đăng ký" textFill="#4e8cde">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Text fill="#263e7b" layoutX="85.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phần mềm quản lý">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Text>
+        <Text layoutX="82.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TỔ DÂN PHỐ" wrappingWidth="230.34490966796875">
+            <font>
+                <Font name="System Bold" size="32.0" />
+            </font>
+            <fill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.25882354378700256" green="0.45490196347236633" blue="0.7686274647712708" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.7215686440467834" green="0.20392157137393951" blue="0.9254902005195618" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Text>
+        <Text fx:id="errorLogin" fill="RED" layoutX="345.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="154.4000000000001" />
+      <PasswordField fx:id="passwordHidden" layoutX="345.0" layoutY="200.0" prefHeight="30.0" prefWidth="154.0" />
+      <CheckBox fx:id="checkBoxPassword" layoutX="479.0" layoutY="201.0" mnemonicParsing="false" onAction="#changeVisibilityPasswordDN" prefHeight="27.0" prefWidth="20.0" />
+      <Button layoutX="407.0" layoutY="228.0" mnemonicParsing="false" onAction="#quenMatKhau" style="-fx-background-color: transparent;" text="Quên mật khẩu">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

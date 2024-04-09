@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="690.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.introductiontose.controller.taoKhoanPhi.TaoKhoanPhi">
+    <children>
+        <Text layoutX="264.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tạo khoản thu phí mới">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font>
+        </Text>
+        <RadioButton fx:id="tuNguyen" layoutX="108.0" layoutY="76.0" mnemonicParsing="false" text="Khoản phí tự nguyện">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="loaiPhi" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="batBuoc" layoutX="428.0" layoutY="76.0" mnemonicParsing="false" text="Khoản phí bắt buộc" toggleGroup="$loaiPhi">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </RadioButton>
+        <VBox alignment="TOP_RIGHT" layoutX="-33.0" layoutY="113.0" prefHeight="496.0" prefWidth="830.0">
+            <children>
+                <AnchorPane fx:id="tieuDeSection" prefHeight="99.0" prefWidth="719.0">
+                    <children>
+                        <Label layoutX="62.0" layoutY="9.0" text="Tiêu đề khoản phí: ">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="tieude" layoutX="91.0" layoutY="40.0" prefHeight="49.0" prefWidth="637.0" />
+                    </children>
+                    <padding>
+                        <Insets top="10.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </AnchorPane>
+                <AnchorPane layoutX="51.0" layoutY="133.0" prefHeight="107.0" prefWidth="747.0">
+                    <children>
+                        <Label layoutX="58.0" layoutY="9.0" text="Nội dung thu phí:">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <TextArea fx:id="noidung" layoutX="87.0" layoutY="41.333333333333336" prefHeight="136.0" prefWidth="640.0" AnchorPane.topAnchor="41.333333333333336" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="129.0" prefWidth="700.0">
+                    <children>
+                        <Label layoutX="54.0" layoutY="7.0" text="Mức phí:">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="mucPhi" layoutX="125.0" prefHeight="37.0" prefWidth="149.0" promptText="chỉ nhập số tiền">
+                            <font>
+                                <Font name="System Bold Italic" size="15.0" />
+                            </font>
+                        </TextField>
+                        <Label layoutX="53.0" layoutY="61.0" text="Bắt đầu: ">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <DatePicker fx:id="dateStart" layoutX="126.0" layoutY="56.0" prefHeight="36.0" prefWidth="119.0" />
+                        <Label layoutX="53.0" layoutY="118.0" text="Kết thúc:">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <Spinner fx:id="hourStart" layoutX="257.0" layoutY="56.0" prefHeight="37.0" prefWidth="60.0" />
+                        <Spinner fx:id="minStart" layoutX="357.0" layoutY="56.0" prefHeight="37.0" prefWidth="60.0" />
+                        <Label layoutX="322.0" layoutY="63.0" text="giờ">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="423.0" layoutY="64.0" text="phút ">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <DatePicker fx:id="dateEnd" layoutX="126.0" layoutY="115.0" prefHeight="36.0" prefWidth="119.0" />
+                        <Spinner fx:id="hourEnd" layoutX="257.0" layoutY="115.0" prefHeight="37.0" prefWidth="60.0" />
+                        <Spinner fx:id="minEnd" layoutX="357.0" layoutY="115.0" prefHeight="37.0" prefWidth="60.0" />
+                        <Label layoutX="322.0" layoutY="122.0" text="giờ">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="423.0" layoutY="123.0" text="phút ">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                  <Text fx:id="loiMucPhi" fill="RED" layoutX="227.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Text>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </AnchorPane>
+                <AnchorPane layoutX="50.0" layoutY="303.0" prefHeight="82.0" prefWidth="747.0">
+                    <children>
+                        <Button layoutX="621.0" layoutY="40.0" mnemonicParsing="false" onAction="#taoKhoanPhi" prefHeight="48.0" prefWidth="126.0" text="Tạo khoản phí">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                  <Text fx:id="loiKhoanPhi" fill="RED" layoutX="3.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="609.871337890625">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Text>
+                    </children>
+                </AnchorPane>
+            </children>
+            <padding>
+                <Insets left="40.0" right="40.0" />
+            </padding>
+        </VBox>
+      <VBox fx:id="vboxKieuPhiBatBuoc" layoutX="624.0" layoutY="67.0" prefHeight="37.0" prefWidth="124.0" spacing="10.0">
+         <children>
+            <RadioButton fx:id="theoDauNguoi" mnemonicParsing="false" text="Theo đầu người">
+               <toggleGroup>
+                  <ToggleGroup fx:id="kieuPhiBatBuoc" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="theoHoGiaDinh" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Theo hộ gia đình" toggleGroup="$kieuPhiBatBuoc" />
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>

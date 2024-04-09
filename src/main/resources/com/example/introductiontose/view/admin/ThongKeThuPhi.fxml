@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.introductiontose.controller.thongke.ThongKeTPAdminController">
+   <children>
+      <HBox alignment="TOP_CENTER" prefHeight="690.0" prefWidth="800.0">
+         <children>
+            <VBox prefHeight="690.0" prefWidth="800.0">
+               <children>
+                  <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="487.5">
+                     <children>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" prefHeight="100.0" prefWidth="215.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+                           <children>
+                              <Label fx:id="tenTDP" prefHeight="100.0" text="Tổ dân phố [Tên tổ dân phố]">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font></Label>
+                              <Label layoutX="41.0" layoutY="10.0" prefHeight="100.0" text="Quản lý thu phí đóng góp">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="27.5" right="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" prefHeight="100.0" prefWidth="215.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../iconPack/profit.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <VBox alignment="CENTER" maxHeight="-Infinity" prefHeight="75.0" prefWidth="150.0">
+                                 <children>
+                                    <Label prefHeight="100.0" text="Thu phí">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font></Label>
+                                    <Label fx:id="thuPhi" layoutX="59.0" layoutY="10.0" prefHeight="100.0" text="Số hộ khẩu" textFill="#1890b3">
+                                       <font>
+                                          <Font name="System Bold" size="24.0" />
+                                       </font></Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="487.5">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="215.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../iconPack/funding.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <VBox alignment="CENTER" maxHeight="-Infinity" prefHeight="75.0" prefWidth="150.0">
+                                 <children>
+                                    <Label prefHeight="100.0" text="Đóng góp">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font></Label>
+                                    <Label fx:id="dongGop" layoutX="59.0" layoutY="10.0" prefHeight="100.0" text="tiền thu phí" textFill="#19b268">
+                                       <font>
+                                          <Font name="System Bold" size="24.0" />
+                                       </font></Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="27.5" right="10.0" />
+                           </HBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="215.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../iconPack/low-price.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <VBox alignment="CENTER" maxHeight="-Infinity" prefHeight="75.0" prefWidth="150.0">
+                                 <children>
+                                    <Label prefHeight="100.0" text="Chưa đóng">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font></Label>
+                                    <Label fx:id="chuaDong" layoutX="59.0" layoutY="10.0" prefHeight="100.0" text="Tiền chưa đóng" textFill="#cf6949">
+                                       <font>
+                                          <Font name="System Bold" size="24.0" />
+                                       </font></Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="15.0" top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.5" prefWidth="450.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+                     <children>
+                        <HBox alignment="CENTER" minHeight="-Infinity" prefHeight="25.0" prefWidth="450.0">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="15.0" right="25.0" top="15.0" />
+                           </VBox.margin>
+                           <children>
+                              <Label fx:id="tkThuPhiDG" alignment="CENTER" minWidth="-Infinity" onMouseClicked="#onThuPhiDGClicked" prefHeight="18.0" prefWidth="120.0" text="Thu phí đóng góp">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane fx:id="thongKeChart" prefHeight="345.0" prefWidth="450.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="27.5" left="27.5" right="10.0" top="15.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+            <Line endX="-100.0" endY="650.0" startX="-100.0" startY="100.0" stroke="#c7bebe" strokeLineCap="ROUND" strokeWidth="0.5">
+               <HBox.margin>
+                  <Insets top="75.0" />
+               </HBox.margin>
+            </Line>
+            <VBox prefHeight="690.0" prefWidth="800.0">
+               <children>
+                  <VBox maxHeight="-Infinity" prefHeight="308.5" prefWidth="100.0" style="-fx-background-color: ffffff; -fx-background-radius: 10;">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="250.0" text="Danh sách khoản phí">
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <VBox fx:id="danhSachKP">
+                           <children>
+                              <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="74.5" prefWidth="250.0" style="-fx-background-color: fafafa; -fx-background-radius: 10;">
+                                 <children>
+                                    <Label text="Phí Trung thu">
+                                       <VBox.margin>
+                                          <Insets left="15.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Đóng góp">
+                                       <VBox.margin>
+                                          <Insets left="15.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="28.0" prefHeight="18.0" prefWidth="217.0" text="Nội dung:  Nhân dịp Tết Trung thu sắp...">
+                                       <VBox.margin>
+                                          <Insets left="15.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </VBox>
+                              <VBox layoutX="20.0" layoutY="20.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="74.5" prefWidth="250.0" style="-fx-background-color: fafafa; -fx-background-radius: 10;">
+                                 <children>
+                                    <Label text="Phí làm đường">
+                                       <VBox.margin>
+                                          <Insets left="15.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Bắt buộc">
+                                       <VBox.margin>
+                                          <Insets left="15.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="28.0" text="Nội dung: Xây dựng đường đi trước thôn...">
+                                       <VBox.margin>
+                                          <Insets left="15.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" top="5.0" />
+                                 </VBox.margin>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="96.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="74.5" prefWidth="250.0" style="-fx-background-color: fafafa; -fx-background-radius: 10;">
+                                 <children>
+                                    <Label text="Phí dịch vụ tháng 12">
+                                       <VBox.margin>
+                                          <Insets left="15.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="Bắt buộc/người">
+                                       <VBox.margin>
+                                          <Insets left="15.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="28.0" text="Nội dung: Đóng phí dịch vụ tháng 12">
+                                       <VBox.margin>
+                                          <Insets left="15.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" top="5.0" />
+                                 </VBox.margin>
+                              </VBox>
+                              <VBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" prefWidth="250.0" fx:id="xemTatCaDS">
+                                 <children>
+                                    <Label text="Xem tất cả" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <Line endX="115.0" startX="-105.0" stroke="#c7bebe" strokeLineCap="ROUND" strokeWidth="0.5">
+                     <VBox.margin>
+                        <Insets left="27.5" top="10.0" />
+                     </VBox.margin>
+                  </Line>
+                  <VBox layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" prefHeight="308.5" prefWidth="100.0" style="-fx-background-color: ffffff; -fx-background-radius: 10;">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="250.0" text="Lịch sử thu phí, đóng góp">
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane fx:id="scrollPaneLichSu" fitToWidth="true" hbarPolicy="NEVER" minViewportHeight="200.0" minViewportWidth="250.0" prefHeight="200.0" prefViewportHeight="200.0" prefViewportWidth="250.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" styleClass="parent" stylesheets="@../style.css" vbarPolicy="NEVER">
+                           <content>
+                              <VBox fx:id="lichSu" minHeight="215.0" style="-fx-background-color: #ffffff;">
+                                 <children>
+                                    <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="74.5" prefWidth="250.0" style="-fx-background-color: fafafa; -fx-background-radius: 10;">
+                                       <children>
+                                          <Label text="Tạ Quang Phổ">
+                                             <VBox.margin>
+                                                <Insets left="15.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label text="Đóng góp">
+                                             <VBox.margin>
+                                                <Insets left="15.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="28.0" text="Phí Trung thu">
+                                             <VBox.margin>
+                                                <Insets left="15.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="5.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <VBox layoutX="20.0" layoutY="15.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="74.5" prefWidth="250.0" style="-fx-background-color: fafafa; -fx-background-radius: 10;">
+                                       <children>
+                                          <Label text="Phạm Việt Hùng">
+                                             <VBox.margin>
+                                                <Insets left="15.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label text="Đóng phí">
+                                             <VBox.margin>
+                                                <Insets left="15.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="28.0" text="Phí làm đường">
+                                             <VBox.margin>
+                                                <Insets left="15.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <VBox layoutX="10.0" layoutY="95.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="74.5" prefWidth="250.0" style="-fx-background-color: fafafa; -fx-background-radius: 10;">
+                                       <children>
+                                          <Label text="Trịnh Văn Hậu">
+                                             <VBox.margin>
+                                                <Insets left="15.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label text="Đóng phí">
+                                             <VBox.margin>
+                                                <Insets left="15.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="28.0" text="Phí làm đường">
+                                             <VBox.margin>
+                                                <Insets left="15.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <VBox layoutX="10.0" layoutY="170.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="74.5" prefWidth="250.0" style="-fx-background-color: fafafa; -fx-background-radius: 10;">
+                                       <children>
+                                          <Label text="Phạm Việt Hùng">
+                                             <VBox.margin>
+                                                <Insets left="15.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label text="Đóng phí">
+                                             <VBox.margin>
+                                                <Insets left="15.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="28.0" text="Phí làm đường">
+                                             <VBox.margin>
+                                                <Insets left="15.0" top="5.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="27.5" left="10.0" right="27.5" top="15.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</Pane>

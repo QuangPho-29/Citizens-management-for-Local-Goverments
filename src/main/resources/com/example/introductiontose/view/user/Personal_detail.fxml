@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.introductiontose.controller.ThongTinChiTietController">
+   <children>
+      <Label layoutX="181.0" layoutY="28.0" prefHeight="46.0" prefWidth="254.0" text="Thông tin cá nhân" textFill="#8523c1">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="109.0" prefHeight="26.0" prefWidth="59.0" text="Họ tên:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="105.0" layoutY="109.0" prefHeight="26.0" prefWidth="177.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="416.0" prefHeight="26.0" prefWidth="87.0" text="Nghề nghiệp:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="338.0" prefHeight="26.0" prefWidth="102.0" text="Nguyên quán:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="339.0" layoutY="338.0" prefHeight="26.0" prefWidth="59.0" text="Bí danh:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="342.0" layoutY="266.0" prefHeight="26.0" prefWidth="74.0" text="Ngày sinh:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="266.0" prefHeight="26.0" prefWidth="59.0" text="Nơi sinh:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="hoTen" layoutX="129.0" layoutY="109.0" prefHeight="26.0" prefWidth="177.0" text="a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="noiSinh" layoutX="129.0" layoutY="266.0" prefHeight="26.0" prefWidth="177.0" text="a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="tonGiao" layoutX="429.0" layoutY="158.0" prefHeight="26.0" prefWidth="146.0" text="a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="biDanh" layoutX="429.0" layoutY="338.0" prefHeight="26.0" prefWidth="146.0" text="a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="nguyenQuan" layoutX="129.0" layoutY="338.0" prefHeight="26.0" prefWidth="177.0" text="a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ngheNghiep" layoutX="152.0" layoutY="416.0" prefHeight="26.0" prefWidth="138.0" text="a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="342.0" layoutY="109.0" prefHeight="26.0" prefWidth="59.0" text="Dân tộc:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="danToc" layoutX="429.0" layoutY="109.0" prefHeight="26.0" prefWidth="146.0" text="a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="339.0" layoutY="158.0" prefHeight="26.0" prefWidth="59.0" text="Tôn giáo:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ngaySinh" layoutX="429.0" layoutY="266.0" prefHeight="26.0" prefWidth="146.0" text="a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="313.0" layoutY="416.0" prefHeight="26.0" prefWidth="87.0" text="Nơi làm việc:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="noiLamViec" layoutX="420.0" layoutY="416.0" prefHeight="26.0" prefWidth="164.0" text="a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="158.0" prefHeight="26.0" prefWidth="68.0" text="Số CCCD:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="soCCCD" layoutX="129.0" layoutY="158.0" prefHeight="26.0" prefWidth="177.0" text="a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="209.0" prefHeight="26.0" prefWidth="59.0" text="Nơi cấp">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="noiCap" layoutX="129.0" layoutY="209.0" prefHeight="26.0" prefWidth="177.0" text="a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="342.0" layoutY="209.0" prefHeight="26.0" prefWidth="74.0" text="Ngày cấp:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ngayCap" layoutX="429.0" layoutY="209.0" prefHeight="26.0" prefWidth="146.0" text="a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="567.0" prefHeight="26.0" prefWidth="164.0" text="Ngày đăng kí thường trú">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ngayDangKyThuongTru" layoutX="221.0" layoutY="567.0" prefHeight="26.0" prefWidth="337.0" text="a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="487.0" prefHeight="26.0" prefWidth="59.0" text="Chủ hộ:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="chuHo" layoutX="120.0" layoutY="487.0" prefHeight="26.0" prefWidth="146.0" text="a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="313.0" layoutY="487.0" prefHeight="26.0" prefWidth="129.0" text="Quan hệ với chủ hộ:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="quanHeVoiChuHo" layoutX="452.0" layoutY="487.0" prefHeight="26.0" prefWidth="122.0" text="a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="628.0" prefHeight="26.0" prefWidth="489.0" text="Nếu có bất kì thông tin nào sai sót, vui lòng liên hệ admin sớm nhất có thể!" textFill="#a42828">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.introductiontose.controller.YeuCauNapTien.YeuCauNapTienUserController">
+   <children>
+      <VBox prefHeight="690.0" prefWidth="800.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="634.0" prefWidth="800.0">
+               <children>
+                  <ImageView fitHeight="517.0" fitWidth="424.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../qrcode_87060664_a97b446fc01fe91cb72f71037c1ff3dc.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <VBox alignment="TOP_CENTER" prefHeight="480.0" prefWidth="800.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="89.0" prefWidth="800.0">
+                     <children>
+                        <TextField fx:id="onNhapTien" prefHeight="26.0" prefWidth="163.0" promptText="Nhập số tiền bạn muốn nạp">
+                           <font>
+                              <Font size="14.0" />
+                           </font></TextField>
+                        <TextField fx:id="ghiChu" prefHeight="25.0" prefWidth="157.0" promptText="Ghi Chú">
+                           <font>
+                              <Font size="14.0" />
+                           </font></TextField>
+                        <Button mnemonicParsing="false" onAction="#naptien" style="-fx-font-size: 14;" text="Nạp tiền" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="ktra" prefHeight="19.0" prefWidth="223.0" text="" style="-fx-text-fill: RED" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

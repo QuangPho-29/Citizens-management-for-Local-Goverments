@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" styleClass="parent" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="729.0" prefWidth="250.0" styleClass="sidebar" stylesheets="@style.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox id="account" alignment="CENTER_LEFT" maxWidth="-Infinity" prefHeight="50.0" prefWidth="250.0" style="-fx-padding: 0;" styleClass="button" stylesheets="@style.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@iconPack/danger.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Text fill="#0e3676" strokeType="OUTSIDE" strokeWidth="0.0" text="PHDHH">
+                     <HBox.margin>
+                        <Insets left="20.0" top="1.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Calibri" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <VBox layoutX="21.0" layoutY="221.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="315.0" prefWidth="230.0" AnchorPane.bottomAnchor="206.39999999999992" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="215.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="230.0">
+                     <children>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@iconPack/menu.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#0e3676" strokeType="OUTSIDE" strokeWidth="0.0" text="Trang chủ">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox id="account" alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="230.0" style="-fx-padding: 0; -fx-border-color: #11459B; -fx-border-radius: 10;" styleClass="button" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@iconPack/chart.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Text fill="#0e3676" strokeType="OUTSIDE" strokeWidth="0.0" text="Thống kê">
+                           <HBox.margin>
+                              <Insets left="20.0" top="1.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox id="account" alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="230.0" style="-fx-padding: 0;" styleClass="button" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@iconPack/menu.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Text fill="#0e3676" strokeType="OUTSIDE" strokeWidth="0.0" text="Danh sách">
+                           <HBox.margin>
+                              <Insets left="20.0" top="1.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox id="account" alignment="CENTER_LEFT" layoutX="10.0" layoutY="80.0" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="230.0" style="-fx-padding: 0;" styleClass="button" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@iconPack/tool.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Text fill="#0e3676" strokeType="OUTSIDE" strokeWidth="0.0" text="Cài đặt">
+                           <HBox.margin>
+                              <Insets left="20.0" top="1.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="651.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="230.0" style="-fx-padding: 0;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="15.0">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@iconPack/add.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Text fill="#11459b" strokeType="OUTSIDE" strokeWidth="0.0" text="Thông tin">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <top>
+      <AnchorPane prefHeight="20.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="983.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="5.0">
+               <image>
+                  <Image url="@iconPack/power.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutY="-15.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="300.0" style="-fx-border-color: #797979; -fx-border-radius: 25; -fx-background-color: #EAEAEA; -fx-background-radius: 25;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="10.0">
+                     <children>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@iconPack/add.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Text fill="#797979" strokeType="OUTSIDE" strokeWidth="0.0" text="Tìm kiếm">
+                           <font>
+                              <Font name="Calibri Italic" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="484.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="13.0" AnchorPane.topAnchor="13.0">
+                     <image>
+                        <Image url="@iconPack/bell.png" />
+                     </image>
+                  </ImageView>
+                  <HBox alignment="CENTER_LEFT" layoutX="530.0" layoutY="11.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <children>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@iconPack/bell.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ta Quang Pho">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #F8FAFE; -fx-background-radius: 20; -fx-border-color: #FFFFFF; -fx-border-radius: 20;">
+               <children>
+                  <VBox alignment="CENTER" minWidth="-Infinity" prefHeight="200.0" prefWidth="170.0">
+                     <children>
+                        <Text fill="#076df2" strokeType="OUTSIDE" strokeWidth="0.0" text="Công quỹ">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="20,000,000">
+                           <font>
+                              <Font name="Calibri Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <SplitPane maxHeight="-Infinity" prefHeight="70.0" prefWidth="0.0">
+                     <HBox.margin>
+                        <Insets left="40.0" right="40.0" />
+                     </HBox.margin>
+                  </SplitPane>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="170.0">
+                     <children>
+                        <Text fill="#d35230" strokeType="OUTSIDE" strokeWidth="0.0" text="Chưa đóng">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2,500,000">
+                           <font>
+                              <Font name="Calibri Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <SplitPane layoutX="180.0" layoutY="10.0" maxHeight="-Infinity" prefHeight="70.0" prefWidth="0.0">
+                     <HBox.margin>
+                        <Insets left="40.0" right="40.0" />
+                     </HBox.margin>
+                  </SplitPane>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="170.0">
+                     <children>
+                        <Text fill="#21a366" strokeType="OUTSIDE" strokeWidth="0.0" text="Quyên góp">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="27,500,000">
+                           <font>
+                              <Font name="Calibri Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="284.0" prefWidth="743.0" style="-fx-background-color: #F8FAFE; -fx-background-radius: 20; -fx-border-color: #FFFFFF; -fx-border-radius: 20;">
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="221.0" prefWidth="743.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;">
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

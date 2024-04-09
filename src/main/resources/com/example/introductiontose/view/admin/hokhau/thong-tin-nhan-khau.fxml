@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="670.0" prefWidth="925.0" stylesheets="@../../../stylesheet/danhsach-honhankhau.css" xmlns="http://javafx.com/javafx/20" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.introductiontose.controller.admin.hokhau.ThongTinNhanKhauController">
+   <children>
+      <BorderPane prefHeight="670.0" prefWidth="925.0">
+         <center>
+            <AnchorPane prefHeight="670.0" prefWidth="890.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane fx:id="paneContent" layoutX="17.5" layoutY="15.0" prefHeight="550.0" prefWidth="890.0" styleClass="pane-detail">
+                     <children>
+                        <HBox alignment="CENTER" layoutX="28.0" layoutY="25.0" prefHeight="500.0" prefWidth="800.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="344.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Họ tên" wrappingWidth="100.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="hoTen" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Văn A" wrappingWidth="200.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bí danh" wrappingWidth="100.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="biDanh" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Văn A" wrappingWidth="200.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày sinh" wrappingWidth="100.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="ngaySinh" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Văn A" wrappingWidth="200.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nơi Sinh" wrappingWidth="100.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="noiSinh" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Văn A" wrappingWidth="200.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyên Quán" wrappingWidth="100.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="nguyenQuan" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Văn A Nguyễn Văn B Nguyễn Văn C Nguyễn Văn D Nguyễn Văn E" wrappingWidth="200.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dân tộc" wrappingWidth="100.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="danToc" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Văn A" wrappingWidth="200.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tôn giáo" wrappingWidth="100.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="tonGiao" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Văn A" wrappingWidth="200.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Địa chỉ cũ" wrappingWidth="100.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="diaChiCu" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Văn A Nguyễn Văn B Nguyễn Văn C Nguyễn Văn D Nguyễn Văn E" wrappingWidth="200.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="40.0" right="15.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <Line endX="-100.0" endY="500.0" startX="-100.0" stroke="#acacac">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Line>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="350.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Số căn cước công dân" wrappingWidth="100.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="soCccd" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Văn A" wrappingWidth="200.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày cấp" wrappingWidth="100.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="ngayCap" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Văn A" wrappingWidth="200.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nơi cấp" wrappingWidth="100.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="noiCap" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Văn A" wrappingWidth="200.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nghề nghiệp" wrappingWidth="100.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="ngheNghiep" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Văn A" wrappingWidth="200.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nơi làm việc" wrappingWidth="100.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="noiLamViec" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Văn A Nguyễn Văn B Nguyễn Văn C Nguyễn Văn D Nguyễn Văn E" wrappingWidth="200.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày đăng kí thường trú" wrappingWidth="100.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="ngayDKTT" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Văn A" wrappingWidth="200.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Quan hệ với chủ hộ" wrappingWidth="100.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="quanHe" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Văn A" wrappingWidth="200.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="250.0" spacing="20.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID hộ khẩu" wrappingWidth="100.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="idHoKhau" strokeType="OUTSIDE" strokeWidth="0.0" text="Nguyễn Văn A" wrappingWidth="200.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="40.0" right="40.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children></Pane>
+               </children></AnchorPane>
+         </center>
+         <top>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="70.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#goBackPrevPrev" styleClass="btn-menu" text="Danh sách hộ khẩu">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="25.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="&gt;">
+                     <HBox.margin>
+                        <Insets bottom="13.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="prevTitle" mnemonicParsing="false" onAction="#goBackPrev" styleClass="btn-menu" text="Hộ khẩu A">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="&gt;">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="13.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Button fx:id="title" mnemonicParsing="false" styleClass="btn-menu" text="Nguyễn Văn A">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.AmbientLight?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.ParallelCamera?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.introductiontose.controller.hokhau.GuiYeuCauTamVangController">
+   <children>
+      <Label layoutX="148.0" layoutY="71.0" />
+      <Label layoutX="231.0" layoutY="35.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="113.0" layoutY="51.0" prefHeight="38.0" prefWidth="300.0" text="Yêu cầu đăng kí tạm vắng" textFill="#c040cf">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Group layoutX="42.0" layoutY="157.0" />
+      <Group layoutX="41.0" layoutY="301.0" />
+      <Group layoutX="395.0" layoutY="312.0" />
+      <Group layoutX="459.0" layoutY="228.0" />
+      <Group layoutX="41.0" layoutY="228.0" />
+      <Group layoutX="341.0" layoutY="132.0" />
+      <Group layoutX="462.0" layoutY="153.0" />
+      <Button fx:id="sendRequest" contentDisplay="TOP" layoutX="294.0" layoutY="566.0" mnemonicParsing="false" onMouseClicked="#handleConfirm" prefHeight="70.0" prefWidth="199.0" text="Gửi yêu cầu" textFill="#4b1a1a">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Label layoutX="69.0" layoutY="183.0" prefHeight="20.0" prefWidth="97.0" text="Ngày bắt đầu:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="183.0" prefHeight="20.0" prefWidth="97.0" text="Ngày kết thúc:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <AmbientLight color="CHARTREUSE" layoutX="60.0" layoutY="44.0" lightOn="true" />
+      <ParallelCamera layoutX="69.0" layoutY="52.0" />
+      <Label layoutX="59.0" layoutY="389.0" prefHeight="20.0" prefWidth="70.0" text="Lý do:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="290.0" prefHeight="20.0" prefWidth="151.0" text="Nơi đăng ký tạm trú:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="noiDangKyTamTru" layoutX="46.0" layoutY="319.0" prefHeight="26.0" prefWidth="441.0" promptText="Nơi đăng ký tạm trú: " />
+      <TextField fx:id="lyDo" layoutX="46.0" layoutY="417.0" prefHeight="50.0" prefWidth="442.0" promptText="Lý do: " />
+      <DatePicker fx:id="DateBegin" layoutX="46.0" layoutY="212.0" />
+      <DatePicker fx:id="DateEnd" layoutX="301.0" layoutY="212.0" prefHeight="26.0" prefWidth="186.0" />
+      <CheckBox fx:id="check" layoutX="77.0" layoutY="516.0" mnemonicParsing="false" text="Tôi xin cam đoan những khai báo trên là đúng sự thật">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="Hhhh" layoutX="352.0" layoutY="637.0" prefHeight="18.0" prefWidth="199.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="800.0" stylesheets="@../../stylesheet/hokhau/ho-khau.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.introductiontose.controller.hokhau.YeuCauNhanKhauController">
+   <children>
+      <HBox prefHeight="690.0" prefWidth="800.0">
+         <children>
+            <VBox alignment="CENTER_LEFT" minWidth="-Infinity" prefHeight="800.0" prefWidth="165.0">
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </HBox.margin>
+               <children>
+                  <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#setTamVangAction" prefHeight="90.0" prefWidth="150.0" style="-fx-background-color: ffffff; -fx-background-radius: 10;">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconImg/icons8-search-50.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label minWidth="-Infinity" prefWidth="80.0" text="Đăng ký tạm vắng" wrapText="true">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="566.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#setTamTruAction" prefHeight="90.0" prefWidth="150.0" style="-fx-background-color: ffffff; -fx-background-radius: 10;">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconImg/icons8-search-50.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label minWidth="-Infinity" prefWidth="80.0" text="Đăng ký tạm trú" wrapText="true">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="25.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#showDoiChuHo" prefHeight="90.0" prefWidth="150.0" style="-fx-background-color: ffffff; -fx-background-radius: 10;">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconImg/icons8-search-50.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label minWidth="-Infinity" prefWidth="80.0" text="Thay đổi chủ hộ" wrapText="true">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="125.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#showTachKhau" prefHeight="90.0" prefWidth="150.0" style="-fx-background-color: ffffff; -fx-background-radius: 10;">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconImg/icons8-search-50.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label minWidth="-Infinity" prefWidth="80.0" text="Tách khẩu" wrapText="true">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="225.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#showThemNhanKhau" prefHeight="90.0" prefWidth="150.0" style="-fx-background-color: ffffff; -fx-background-radius: 10;">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconImg/icons8-search-50.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label minWidth="-Infinity" prefWidth="80.0" text="Thêm nhân khẩu" wrapText="true">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="325.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#showXoaNhanKhau" prefHeight="90.0" prefWidth="150.0" style="-fx-background-color: ffffff; -fx-background-radius: 10;">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../iconImg/icons8-search-50.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label minWidth="-Infinity" prefWidth="80.0" text="Xóa nhân khẩu" wrapText="true">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <Line endX="-100.0" endY="650.0" startX="-100.0" startY="100.0" stroke="#c7bebe" strokeLineCap="ROUND" strokeWidth="0.5">
+               <HBox.margin>
+                  <Insets top="75.0" />
+               </HBox.margin>
+            </Line>
+            <AnchorPane prefHeight="670.0" prefWidth="650.0">
+               <children>
+                  <Pane fx:id="paneContent" layoutX="14.0" layoutY="34.0" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #fff; -fx-background-radius: 20;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="27.5" AnchorPane.topAnchor="20.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</Pane>

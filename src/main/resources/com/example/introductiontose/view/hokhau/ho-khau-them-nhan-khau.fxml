@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minWidth="-Infinity" prefHeight="600.0" prefWidth="525.0" style="-fx-background-color: #fff; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.introductiontose.controller.hokhau.ThemNhanKhauController">
+   <children>
+      <Text layoutX="23.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thêm nhân khẩu">
+         <font>
+            <Font name="Arial" size="32.0" />
+         </font>
+      </Text>
+      <Text layoutX="23.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Điền các thông tin đầy đủ về nhân khẩu, không được bỏ qua mục (*)">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Text>
+      <Line endX="261.0" fill="BLACK" layoutX="124.0" layoutY="83.0" opacity="0.41" startX="-100.0" stroke="#acacac" />
+      <HBox alignment="CENTER" layoutY="116.0" prefHeight="428.0" prefWidth="525.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="hoTenText" prefHeight="36.0" prefWidth="250.0" promptText="Họ tên (*)" style="-fx-background-color: inherit; -fx-border-color: #acacac; -fx-border-radius: 4;">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="biDanhText" prefHeight="36.0" prefWidth="250.0" promptText="Bí danh" style="-fx-background-color: inherit; -fx-border-color: #acacac; -fx-border-radius: 4;">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <DatePicker fx:id="ngaySinhDatePicker" prefHeight="36.0" prefWidth="250.0" promptText="Ngày sinh (*)" showWeekNumbers="true" style="-fx-background-color: inherit; -fx-border-color: #acacac; -fx-border-radius: 4;">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </DatePicker>
+                  <TextField fx:id="noiSinhText" prefHeight="36.0" prefWidth="250.0" promptText="Nơi sinh (*)" style="-fx-background-color: inherit; -fx-border-color: #acacac; -fx-border-radius: 4;">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="nguyenQuanText" layoutX="10.0" layoutY="158.0" prefHeight="36.0" prefWidth="250.0" promptText="Nguyên quán" style="-fx-background-color: inherit; -fx-border-color: #acacac; -fx-border-radius: 4;">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="danTocText" prefHeight="36.0" prefWidth="250.0" promptText="Dân tộc" style="-fx-background-color: inherit; -fx-border-color: #acacac; -fx-border-radius: 4;">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="tonGiaoText" prefHeight="36.0" prefWidth="250.0" promptText="Tôn giáo" style="-fx-background-color: inherit; -fx-border-color: #acacac; -fx-border-radius: 4;">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="diaChiCuText" layoutX="10.0" layoutY="346.0" prefHeight="36.0" prefWidth="250.0" promptText="Địa chỉ cũ" style="-fx-background-color: inherit; -fx-border-color: #acacac; -fx-border-radius: 4;">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+               <HBox.margin>
+                  <Insets left="15.0" right="20.0" />
+               </HBox.margin>
+            </VBox>
+            <Line endX="-100.0" endY="428.0" startX="-100.0" stroke="#acacac" />
+            <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="200.0">
+               <HBox.margin>
+                  <Insets left="20.0" right="10.0" />
+               </HBox.margin>
+               <children>
+                  <HBox prefHeight="36.0" prefWidth="250.0">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <TextField fx:id="soCccdText" prefHeight="36.0" prefWidth="214.0" promptText="Số Căn cước công dân (*)" style="-fx-background-color: inherit; -fx-border-color: #acacac; -fx-border-radius: 4 0 0 4;">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#fill" prefHeight="36.0" prefWidth="36.0" styleClass="btn-blue">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../iconImg/icons8-input-50.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <DatePicker fx:id="ngayCapDatePicker" prefHeight="36.0" prefWidth="250.0" promptText="Ngày cấp (*)" showWeekNumbers="true" style="-fx-background-color: inherit; -fx-border-color: #acacac; -fx-border-radius: 4;">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </DatePicker>
+                  <TextField fx:id="noiCapText" layoutX="10.0" layoutY="102.0" prefHeight="36.0" prefWidth="250.0" promptText="Nơi cấp (*)" style="-fx-background-color: inherit; -fx-border-color: #acacac; -fx-border-radius: 4;">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="ngheNghiepText" layoutX="10.0" layoutY="138.0" prefHeight="36.0" prefWidth="250.0" promptText="Nghề nghiệp" style="-fx-background-color: inherit; -fx-border-color: #acacac; -fx-border-radius: 4;">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="noiLamViecText" layoutX="10.0" layoutY="174.0" prefHeight="36.0" prefWidth="250.0" promptText="Nơi làm việc" style="-fx-background-color: inherit; -fx-border-color: #acacac; -fx-border-radius: 4;">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <DatePicker fx:id="ngayDKTTDatePicker" prefHeight="36.0" prefWidth="250.0" promptText="Ngày đăng kí thường trú" showWeekNumbers="true" style="-fx-background-color: inherit; -fx-border-color: #acacac; -fx-border-radius: 4;">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </DatePicker>
+                  <TextField fx:id="quanHeText" layoutX="10.0" layoutY="246.0" prefHeight="36.0" prefWidth="250.0" promptText="Quan hệ với chủ hộ (*)" style="-fx-background-color: inherit; -fx-border-color: #acacac; -fx-border-radius: 4;">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#addClick" prefHeight="30.0" prefWidth="110.0" styleClass="btn-blue" text="ADD" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name=".VnArial Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

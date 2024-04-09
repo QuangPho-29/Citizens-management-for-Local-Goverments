@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.introductiontose.controller.admin.YeuCauNhanKhauController">
+   <children>
+      <HBox prefHeight="690.0" prefWidth="800.0">
+         <children>
+            <ScrollPane fitToHeight="true" hbarPolicy="NEVER" minViewportHeight="647.5" minViewportWidth="395.5" prefHeight="647.5" prefViewportHeight="647.5" prefViewportWidth="395.5" prefWidth="745.0" style="-fx-background-radius: 10; -fx-background-color: fffffff;" vbarPolicy="ALWAYS">
+               <content>
+                  <VBox fx:id="VBoxList" maxHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="410.5" style="-fx-background-color: ffffff; -fx-background-radius: 10;">
+                     <children>
+                        <HBox fx:id="hBoxTimKiem" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" prefWidth="182.0" text="Danh sách yêu cầu thay đổi nhân khẩu và thủ tục hành chính" wrapText="true">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin></Label>
+                              <TextField fx:id="noidungtimkiem" prefHeight="26.0" prefWidth="134.0" promptText="Tìm kiếm">
+                                 <HBox.margin>
+                                    <Insets left="25.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button mnemonicParsing="false" onAction="#timkiem" text="Tìm" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+               <HBox.margin>
+                  <Insets bottom="27.5" left="27.5" right="10.0" top="15.0" />
+               </HBox.margin>
+            </ScrollPane>
+            <Line endX="-100.0" endY="650.0" startX="-100.0" startY="100.0" stroke="#c7bebe" strokeLineCap="ROUND" strokeWidth="0.5">
+               <HBox.margin>
+                  <Insets top="75.0" />
+               </HBox.margin>
+            </Line>
+            <VBox maxHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="296.0" style="-fx-background-color: ffffff; -fx-background-radius: 10;">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="47.0" prefWidth="296.0">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" prefWidth="220.0" text="Thông tin yêu cầu" textOverrun="CLIP" wrapText="true">
+                           <font>
+                              <Font size="16.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <Text fx:id="hienThiChiTiet" strokeType="OUTSIDE" strokeWidth="0.0" text="Các trường thông tin của yêu cầu" textAlignment="JUSTIFY" wrappingWidth="278.60108947753906">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin></Text>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="27.5" left="10.0" right="27.5" top="15.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</Pane>

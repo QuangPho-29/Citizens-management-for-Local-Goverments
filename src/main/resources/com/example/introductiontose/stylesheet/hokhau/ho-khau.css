@@ -1,0 +1,112 @@
+/* Styles for the vbox container */
+.vbox {
+    -fx-background-color: #fff;
+    -fx-background-radius: 0 20 20 0; /* Rounded corners on the right side */
+}
+
+/* Styles for the menu button */
+.btn-menu {
+    -fx-background-color: transparent; /* Inherit background color */
+    -fx-background-radius: 30;
+    -fx-border-width: 0;
+}
+
+.btn-menu:hover {
+    -fx-background-color: #d3d3d3; /* Background color on hover */
+}
+
+.btn-menu:pressed {
+    -fx-background-color: #6c7dd9; /* Background color when pressed */
+}
+
+/* Styles for the menu button on selection */
+.btn-menu-on-select {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0 30 30 0;
+    -fx-border-color: #596ed7;
+    -fx-border-width: 0 0 0 4;
+}
+
+.btn-menu-on-select:hover {
+    -fx-background-color: #d3d3d3;
+}
+
+.btn-menu-on-select:pressed {
+    -fx-background-color: #6c7dd9;
+}
+
+/* Additional button styles */
+.btn-blue {
+    -fx-background-color: rgba(89, 110, 215); /* Blue button color */
+    -fx-background-insets: 0, 1, 2, 3;
+    -fx-background-radius: 3, 2, 5, 4;
+    -fx-alignment: center;
+}
+
+.btn-blue-hidden {
+    -fx-background-color: rgba(89, 110, 215, 0.4); /* Semi-transparent blue button */
+    -fx-background-insets: 0, 1, 2, 3;
+    -fx-background-radius: 3, 2, 5, 4;
+    -fx-alignment: center;
+}
+
+.btn-red {
+    -fx-background-color: rgb(227, 61, 61); /* Red button color */
+    -fx-background-insets: 0, 1, 2, 3;
+    -fx-background-radius: 3, 2, 5, 4;
+    -fx-alignment: center;
+}
+
+.btn-red-hidden {
+    -fx-background-color: rgb(227, 61, 61, 0.4); /* Semi-transparent red button */
+    -fx-background-insets: 0, 1, 2, 3;
+    -fx-background-radius: 3, 2, 5, 4;
+    -fx-alignment: center;
+}
+
+/* Styles for the "Chu Ho" button */
+.btn-chu-ho {
+    -fx-background-color: transparent;
+    -fx-background-radius: 50%; /* Circular shape */
+    -fx-border-color: #acacac;
+    -fx-border-radius: 50%;
+    -fx-alignment: center;
+}
+
+.btn-chu-ho:hover {
+    -fx-background-color: #596ed7;
+}
+
+.btn-chu-ho:pressed {
+    -fx-background-color: #6c7dd9;
+}
+
+/* Styles for the "Nhan Khau" button */
+.btn-nhan-khau {
+    -fx-background-color: transparent;
+    -fx-background-radius: 50%; /* Circular shape */
+    -fx-border-color: #acacac;
+    -fx-border-radius: 50%;
+    -fx-alignment: center;
+}
+
+.btn-nhan-khau:hover {
+    -fx-background-color: #acacac;
+}
+
+.btn-nhan-khau:pressed {
+    -fx-background-color: #b6b6b6;
+}
+
+/* Styles for the "Nhan Khau" button */
+.btn-ho-khau {
+    -fx-background-color: transparent;
+    -fx-background-radius: 50%; /* Circular shape */
+    -fx-border-color: #acacac;
+    -fx-border-radius: 50%;
+    -fx-alignment: center;
+}
+
+.btn-ho-khau:hover {
+    -fx-background-color: #596ed7;
+}

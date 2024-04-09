@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<BorderPane fx:id="Dashboard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-radius: 20;" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.introductiontose.controller.dashboard.DashboardUserController">
+    <top>
+        <AnchorPane prefHeight="75.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER_LEFT" layoutX="-10.0" layoutY="-11.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="54.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <Button fx:id="thoat" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="15.0" prefWidth="30.0" style="-fx-background-radius: 7.5;" styleClass="button-exit">
+                            <graphic>
+                                <FontIcon iconColor="#ffffff" iconLiteral="ion4-ios-close" iconSize="10" />
+                            </graphic>
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                            <tooltip>
+                                <Tooltip anchorLocation="CONTENT_BOTTOM_RIGHT" text="Exit">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Tooltip>
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="thuNho" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="15.0" prefWidth="30.0" style="-fx-background-radius: 7.5;">
+                            <graphic>
+                                <Label style="-fx-text-fill: #ffffff" text="-" />
+                            </graphic>
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                            <tooltip>
+                                <Tooltip anchorLocation="CONTENT_BOTTOM_RIGHT" text="Minimal" />
+                            </tooltip>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="750.0" layoutY="-12.0" prefHeight="57.0" prefWidth="261.0" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+                    <children>
+                        <ImageView fx:id="anhDaiDien" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" top="5.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <VBox fx:id="thongTinNguoiDung" maxWidth="Infinity" prefHeight="45.0" prefWidth="192.0">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                            <children>
+                                <Label fx:id="userName" alignment="CENTER_LEFT" maxWidth="Infinity" text="Lương Ngọc Dương">
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" top="5.0" />
+                                    </VBox.margin>
+                                    <font>
+                                        <Font name="Arial Bold" size="18.0" />
+                                    </font>
+                                    <tooltip>
+                                        <Tooltip text="Empty Tooltip" />
+                                    </tooltip>
+                                </Label>
+                                <Label fx:id="ngaySinh" text="31/07/1975" textFill="#286b9e">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                        <Button fx:id="chiTiet" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#signOut" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: transparent">
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </HBox.margin>
+                            <graphic>
+                                <FontIcon iconColor="#425C5A" iconLiteral="far-caret-square-down" iconSize="30" onMouseClicked="#signOut" />
+                            </graphic>
+                        </Button>
+                    </children>
+                </HBox>
+                <Button fx:id="nutThongBao" layoutX="663.0" layoutY="23.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: transparent" AnchorPane.topAnchor="23.0">
+                    <graphic>
+                        <FontIcon iconColor="#425C5A" iconLiteral="far-bell" iconSize="30" />
+                    </graphic>
+                </Button>
+            <AnchorPane fx:id="draggBar" layoutX="111.0" layoutY="-1.0" prefHeight="87.0" prefWidth="540.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            </children>
+        </AnchorPane>
+    </top>
+    <left>
+        <AnchorPane minWidth="-Infinity" prefHeight="200.0" prefWidth="225.0" styleClass="sidebar" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="50.0" fitWidth="175.0" layoutX="11.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="0.0" />
+                <VBox layoutX="20.0" layoutY="71.0" prefHeight="452.0" prefWidth="174.0" spacing="10" style="-fx-padding: 10;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="32.0">
+                    <Button fx:id="trangChu" maxWidth="Infinity" onMouseClicked="#onTrangChuClicked" onMouseEntered="#onButtonEntered" styleClass="menu-item" text="Trang chủ" wrapText="true">
+                        <graphic>
+                            <FontIcon fx:id="trangChuIcon" iconColor="#FFFFFF" iconLiteral="bi-grid-1x2-fill" iconSize="18" />
+                        </graphic>
+                    </Button>
+                    <Button fx:id="hoKhauButton" layoutX="20.0" layoutY="56.0" maxWidth="Infinity" onMouseClicked="#onHoKhauClicked" onMouseEntered="#onButtonEntered" styleClass="menu-item" text="Hộ khẩu" wrapText="true">
+                        <graphic>
+                            <FontIcon fx:id="dsNKIcon" iconColor="#FFFFFF" iconLiteral="bi-list-task" iconSize="18" />
+                        </graphic>
+                    </Button>
+                    <Button fx:id="thuTucButton" layoutX="20.0" layoutY="56.0" maxWidth="Infinity" onMouseClicked="#conThuTucClicked" onMouseEntered="#onButtonEntered" styleClass="menu-item" text="Thủ tục hành chính" wrapText="true">
+                        <graphic>
+                            <FontIcon fx:id="ycNKIcon" iconColor="#FFFFFF" iconLiteral="bi-person-bounding-box" iconSize="18" />
+                        </graphic>
+                    </Button>
+               <Button fx:id="thuTucButton1" layoutX="20.0" layoutY="121.0" maxWidth="Infinity" onMouseClicked="#conThuTucClicked" onMouseEntered="#onButtonEntered" styleClass="menu-item" text="Lịch sử yêu cầu" wrapText="true">
+                  <graphic>
+                     <FontIcon fx:id="ycNKIcon1" iconColor="#FFFFFF" iconLiteral="fas-history" iconSize="18" />
+                  </graphic>
+               </Button>
+                    <Button fx:id="tkDongPhiButton" layoutX="20.0" layoutY="92.0" maxWidth="Infinity" onMouseClicked="#onThongKeClicked" onMouseEntered="#onButtonEntered" styleClass="menu-item" text="Thống kê đóng phí" wrapText="true">
+                        <graphic>
+                            <FontIcon fx:id="tkTPIcon" iconColor="#FFFFFF" iconLiteral="bi-bar-chart-fill" iconSize="18" />
+                        </graphic>
+                    </Button>
+                    <Button fx:id="dongPhiButton" layoutX="20.0" layoutY="128.0" maxWidth="Infinity" onMouseClicked="#onDongPhiClicked" onMouseEntered="#onButtonEntered" styleClass="menu-item" text="Đóng phí" wrapText="true">
+                        <graphic>
+                            <FontIcon fx:id="dongPhiIcon" iconColor="#FFFFFF" iconLiteral="fas-plus-square" iconSize="18" />
+                        </graphic>
+                    </Button>
+                    <Button fx:id="napTienButton" layoutX="20.0" layoutY="128.0" maxWidth="Infinity" onMouseClicked="#onNapTienClicked" onMouseEntered="#onButtonEntered" styleClass="menu-item" text="Nạp tiền" wrapText="true">
+                        <graphic>
+                            <FontIcon fx:id="napTienIcon" iconColor="#FFFFFF" iconLiteral="fas-money-check-alt" iconSize="18" />
+                        </graphic>
+                    </Button>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </left>
+</BorderPane>
